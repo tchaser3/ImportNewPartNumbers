@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PartsForUpdateDataSet" targetNamespace="http://tempuri.org/PartsForUpdateDataSet.xsd" xmlns:mstns="http://tempuri.org/PartsForUpdateDataSet.xsd" xmlns="http://tempuri.org/PartsForUpdateDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PartsForUpdateDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PartsForUpdateDataSet" msprop:Generator_UserDSName="PartsForUpdateDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="partsforimport" msprop:Generator_TableClassName="partsforimportDataTable" msprop:Generator_TableVarName="tablepartsforimport" msprop:Generator_TablePropName="partsforimport" msprop:Generator_RowDeletingName="partsforimportRowDeleting" msprop:Generator_RowChangingName="partsforimportRowChanging" msprop:Generator_RowEvHandlerName="partsforimportRowChangeEventHandler" msprop:Generator_RowDeletedName="partsforimportRowDeleted" msprop:Generator_UserTableName="partsforimport" msprop:Generator_RowChangedName="partsforimportRowChanged" msprop:Generator_RowEvArgName="partsforimportRowChangeEvent" msprop:Generator_RowClassName="partsforimportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PartID" msprop:Generator_ColumnVarNameInTable="columnPartID" msprop:Generator_ColumnPropNameInRow="PartID" msprop:Generator_ColumnPropNameInTable="PartIDColumn" msprop:Generator_UserColumnName="PartID" type="xs:int" />
+              <xs:element name="OldPartNumber" msprop:Generator_ColumnVarNameInTable="columnOldPartNumber" msprop:Generator_ColumnPropNameInRow="OldPartNumber" msprop:Generator_ColumnPropNameInTable="OldPartNumberColumn" msprop:Generator_UserColumnName="OldPartNumber" type="xs:string" />
+              <xs:element name="OldJDEPartNumber" msprop:Generator_ColumnVarNameInTable="columnOldJDEPartNumber" msprop:Generator_ColumnPropNameInRow="OldJDEPartNumber" msprop:Generator_ColumnPropNameInTable="OldJDEPartNumberColumn" msprop:Generator_UserColumnName="OldJDEPartNumber" type="xs:string" />
+              <xs:element name="NewPartNumber" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnNewPartNumber" msprop:Generator_ColumnPropNameInRow="NewPartNumber" msprop:Generator_ColumnPropNameInTable="NewPartNumberColumn" msprop:Generator_UserColumnName="NewPartNumber" type="xs:string" />
+              <xs:element name="NewJDEPartNumber" msprop:Generator_ColumnVarNameInTable="columnNewJDEPartNumber" msprop:Generator_ColumnPropNameInRow="NewJDEPartNumber" msprop:Generator_ColumnPropNameInTable="NewJDEPartNumberColumn" msprop:Generator_UserColumnName="NewJDEPartNumber" type="xs:string" />
+              <xs:element name="PartDescription" msprop:Generator_ColumnVarNameInTable="columnPartDescription" msprop:Generator_ColumnPropNameInRow="PartDescription" msprop:Generator_ColumnPropNameInTable="PartDescriptionColumn" msprop:Generator_UserColumnName="PartDescription" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:partsforimport" />
+      <xs:field xpath="mstns:PartID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
